@@ -37,11 +37,7 @@ class QuestionnairesController extends Controller
     public function store(Request $request)
     {
       $validatedData = $request->validate([
-          'name' => 'required',
-          'amount' => 'required',
-          'company' => 'required',
-          'available' => 'required',
-          'description' => 'required',
+          'title' => 'required',
       ]);
 
       questionnaires::create($request->all());

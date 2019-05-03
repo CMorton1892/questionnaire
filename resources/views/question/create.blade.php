@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <!doctype html>
 <html>
 <head>
@@ -7,37 +11,54 @@
 </head>
 <body>
   <div class="container">
-    <header class="row">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
     <article>
-      <h1>Add Question</h1>
-
-      {!! Form::open(['url' => 'questions']) !!}
-
-      <div class="form-group">
-        {!! Form::label('questionnaireID', 'Question Number:') !!}
-        {!! Form::text('questionnaireID', null, ['class' => 'form-control']) !!}
-      </div>
-
-      <div class="form-group">
-        {!! Form::label('question', 'Question:') !!}
-        {!! Form::textarea('question', null, ['class' => 'form-control']) !!}
-      </div>
-
-      <div class="form-group">
-        {!! Form::submit('Add Question', ['class' => 'btn btn-primary form-control']) !!}
-      </div>
-
-      {!! Form::close() !!}
-
+      <h1>Add Questions</h1>
+      <h4>Your questionnaire can have up to 10 questions.</h4>
+      <hr>
+      <form action="/questionnaire" method="post">
+          {{ csrf_field() }}
+          <div class="form-group">
+              <label for="title">Question 1</label>
+              <input type="text" class="form-control" id="productName"  name="question1">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 2</label>
+              <input type="text" class="form-control" id="productName"  name="question2">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 3</label>
+              <input type="text" class="form-control" id="productName"  name="question3">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 4</label>
+              <input type="text" class="form-control" id="productName"  name="question4">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 5</label>
+              <input type="text" class="form-control" id="productName"  name="question5">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 6</label>
+              <input type="text" class="form-control" id="productName"  name="question6">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 7</label>
+              <input type="text" class="form-control" id="productName"  name="question7">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 8</label>
+              <input type="text" class="form-control" id="productName"  name="question8">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 9</label>
+              <input type="text" class="form-control" id="productName"  name="question9">
+          </div>
+          <div class="form-group">
+              <label for="title">Question 10</label>
+              <input type="text" class="form-control" id="productName"  name="question10">
+          </div>
     </article>
   </div>
 </body>
 </html>
+@endsection

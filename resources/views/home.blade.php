@@ -13,8 +13,6 @@
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="owners/create">Register</a></li>
           </ul>
         </div>
       </nav>
@@ -22,6 +20,7 @@
   </div>
   <section>
     <h1>Questionnaires</h1>
+    <hr>
     <button><a href="questionnaire/create">New</a></button>
     <button><a href="respondents/create">New Questionnaire</a></button>
     <button><a href="/questions">List of Questions</a></button>
@@ -38,7 +37,7 @@
         <tbody>
           @foreach ($questionnaire as $questionnaire)
           <tr>
-            <td>{{ $questionnaire->title }}</td>
+            <td>{{ $questionnaire->id }}</td>
             <td><a href="">Update</a></td>
             <td><a href="">Delete</a></td>
           </tr>

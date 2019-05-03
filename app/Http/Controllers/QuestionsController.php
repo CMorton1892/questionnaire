@@ -14,9 +14,7 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        $questions = questions::all();
-
-        return view('question.show', ['questions' => $questions]);
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class QuestionsController extends Controller
      */
     public function create()
     {
-        return view('question.create');
+      return view('question.create');
     }
 
     /**
@@ -37,11 +35,11 @@ class QuestionsController extends Controller
      */
     public function store(Request $request)
     {
-      $input = $request->all();
+      //$input = $request->all();
 
-      questions::create($input);
+      //questions::create($input);
 
-      return redirect('questions');
+      //return redirect('questions');
     }
 
     /**

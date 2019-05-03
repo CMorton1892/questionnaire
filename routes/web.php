@@ -18,7 +18,7 @@ Route::resource('respondents', 'RespondentController');
 
 //Route::resource('questionnaire', 'QuestionnairesController');
 
-Route::resource('questions', 'QuestionsController');
+//Route::resource('questions', 'QuestionsController');
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
@@ -29,6 +29,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/questionnaire/create', 'QuestionnairesController@create');
     Route::post('/questionnaire', 'QuestionnairesController@store');
     Route::get('/questionnaire', 'QuestionnairesController@index');
+    Route::get('question/create', 'QuestionsController@create');
 });
 
 //Auth::routes();
