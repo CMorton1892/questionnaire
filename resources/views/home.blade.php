@@ -9,15 +9,6 @@
 </head>
 <body>
   <div class="container">
-    <header class="row">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </div>
   <section>
     <h1>Questionnaires</h1>
     <hr>
@@ -49,6 +40,7 @@
       @endif
     </section>
   </section>
+</div>
 </body>
 </html>
 

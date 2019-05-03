@@ -29,7 +29,7 @@
                 </ul>
             </div>
         @endif
-        <button><a href="/question/create">Next</a></button>
+        <button type="submit" class="btn btn-primary">Next</button>
     </form>
   </section>
 </div>

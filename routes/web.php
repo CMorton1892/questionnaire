@@ -30,6 +30,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/questionnaire', 'QuestionnairesController@store');
     Route::get('/questionnaire', 'QuestionnairesController@index');
     Route::get('question/create', 'QuestionsController@create');
+    //Route::post('/questionnaire', 'QuestionsController@store');
 });
 
 //Auth::routes();

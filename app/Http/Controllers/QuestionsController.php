@@ -35,11 +35,14 @@ class QuestionsController extends Controller
      */
     public function store(Request $request)
     {
-      //$input = $request->all();
+      /**
+      *$validatedData = $request->validate([
+      *    'question1' => 'required',
+      *]);
 
-      //questions::create($input);
+      *questions::create($request->all());
 
-      //return redirect('questions');
+      *return redirect('/question'); */
     }
 
     /**

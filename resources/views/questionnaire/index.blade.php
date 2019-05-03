@@ -11,10 +11,9 @@
         <tr>
             <th scope="col">#</th>
             <th scope="col">Questionnaire</th>
-            <th scope="col">Product Description</th>
-            <th scope="col">Company</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Available</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
@@ -22,10 +21,9 @@
             <tr>
                 <th scope="row">{{$questionnaire->id}}</th>
                 <td>{{$questionnaire->title}}</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td><a href="/question/create">Add<a/></td>
+                <td><a href="">Edit</a></td>
+                <td><a href="">Delete</a></td>
             </tr>
         @endforeach
         </tbody>

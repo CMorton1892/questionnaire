@@ -14,6 +14,7 @@
     <article>
       <h1>Add Questions</h1>
       <h4>Your questionnaire can have up to 10 questions.</h4>
+      <h5>The respondents will give their feedback via a Likert Scale.</h5>
       <hr>
       <form action="/questionnaire" method="post">
           {{ csrf_field() }}
@@ -57,6 +58,8 @@
               <label for="title">Question 10</label>
               <input type="text" class="form-control" id="productName"  name="question10">
           </div>
+          <button type="submit" class="btn btn-primary">Add Questions</button>
+        </form>
     </article>
   </div>
 </body>
