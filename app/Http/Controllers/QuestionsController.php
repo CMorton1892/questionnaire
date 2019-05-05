@@ -14,7 +14,8 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        //
+      $question = questions::all();
+      return view('question.index',compact('question',$question));
     }
 
     /**
@@ -35,14 +36,13 @@ class QuestionsController extends Controller
      */
     public function store(Request $request)
     {
-      /**
-      *$validatedData = $request->validate([
-      *    'question1' => 'required',
-      *]);
+      $validatedData = $request->validate([
+          'question1' => 'required',
+      ]);
 
-      *questions::create($request->all());
+      questions::create($request->all());
 
-      *return redirect('/question'); */
+      return redirect('/question');
     }
 
     /**

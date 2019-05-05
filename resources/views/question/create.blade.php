@@ -16,7 +16,7 @@
       <h4>Your questionnaire can have up to 10 questions.</h4>
       <h5>The respondents will give their feedback via a Likert Scale.</h5>
       <hr>
-      <form action="/questionnaire" method="post">
+      <form action="/question" method="post">
           {{ csrf_field() }}
           <div class="form-group">
               <label for="title">Question 1</label>
@@ -58,6 +58,14 @@
               <label for="title">Question 10</label>
               <input type="text" class="form-control" id="productName"  name="question10">
           </div>
+          <div class="form-group">
+            <label for="description">Product Available</label><br/>
+            <label class="radio-inline"><input type="radio" name="available" value="1">Strongly Agree</label>
+            <label class="radio-inline"><input type="radio" name="available" value="2">Agree</label>
+            <label class="radio-inline"><input type="radio" name="available" value="3">Neither</label>
+            <label class="radio-inline"><input type="radio" name="available" value="4">Disagree</label>
+            <label class="radio-inline"><input type="radio" name="available" value="5">Strongly Disagree</label>
+        </div>
           <button type="submit" class="btn btn-primary">Add Questions</button>
         </form>
     </article>
