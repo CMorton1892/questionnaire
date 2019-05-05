@@ -15,6 +15,10 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('questionnaire_id')->nullable()->unsigned();
+            $table->foreign('questionnaire_id')
+              ->references('id')->on('questionnaires')
+              ->onDelete('cascade');
             $table->string('question1');
             $table->string('question2')->nullable();
             $table->string('question3')->nullable();

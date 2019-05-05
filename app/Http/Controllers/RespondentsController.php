@@ -14,9 +14,8 @@ class RespondentController extends Controller
      */
     public function index()
     {
-      $respondents = respondents::all();
-
-      return view('respondents');
+      $respondent = respondents::all();
+      return view('respondent.index',compact('respondent',$respondent));
     }
 
     /**
@@ -26,7 +25,7 @@ class RespondentController extends Controller
      */
     public function create()
     {
-      return view('admin.respondent.create');
+      return view('respondent.create');
     }
 
     /**
@@ -37,11 +36,12 @@ class RespondentController extends Controller
      */
     public function store(Request $request)
     {
-      $input = $request->all();
+      $validatedData = $request->validate([
+      ]);
 
-      respondents::create($input);
+      respondents::create($request->all());
 
-      return redirect('respondents');
+      return redirect('/respondent');
     }
 
     /**

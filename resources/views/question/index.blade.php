@@ -6,6 +6,9 @@
     @if (Session::has('message'))
         <div class="alert alert-info">{{ Session::get('message') }}</div>
     @endif
+    @foreach($question as $questionnaire)
+        <h4>{{ $questionnaire->title }}</h4>
+    @endforeach
     <table class="table">
         <thead class="thead-dark">
         <tr>

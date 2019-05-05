@@ -14,12 +14,17 @@ class CreateRespondentsTable extends Migration
     public function up()
     {
         Schema::create('respondents', function (Blueprint $table) {
-          $table->bigIncrements('respondentID');
-          $table->string('respondentFirstName');
-          $table->string('respondentLastName');
-          $table->integer('age');
-          $table->string('country');
-          $table->string('consent');
+          $table->bigIncrements('id');
+          $table->boolean('response1');
+          $table->boolean('response2')->nullable();
+          $table->boolean('response3')->nullable();
+          $table->boolean('response4')->nullable();
+          $table->boolean('response5')->nullable();
+          $table->boolean('response6')->nullable();
+          $table->boolean('response7')->nullable();
+          $table->boolean('response8')->nullable();
+          $table->boolean('response9')->nullable();
+          $table->boolean('response10')->nullable();
           $table->timestamps();
         });
     }
