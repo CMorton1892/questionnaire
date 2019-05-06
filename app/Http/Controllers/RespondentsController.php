@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\respondents;
+use App\questions;
 
 class RespondentController extends Controller
 {
@@ -15,7 +16,8 @@ class RespondentController extends Controller
     public function index()
     {
       $respondent = respondents::all();
-      return view('respondent.index',compact('respondent',$respondent));
+      $question = questions::all();
+      return view('respondent.index',compact('respondent', $respondent, 'question', $question));
     }
 
     /**

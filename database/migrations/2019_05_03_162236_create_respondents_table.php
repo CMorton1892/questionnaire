@@ -16,15 +16,10 @@ class CreateRespondentsTable extends Migration
         Schema::create('respondents', function (Blueprint $table) {
           $table->bigIncrements('id');
           $table->boolean('response1');
-          $table->boolean('response2')->nullable();
-          $table->boolean('response3')->nullable();
-          $table->boolean('response4')->nullable();
-          $table->boolean('response5')->nullable();
-          $table->boolean('response6')->nullable();
-          $table->boolean('response7')->nullable();
-          $table->boolean('response8')->nullable();
-          $table->boolean('response9')->nullable();
-          $table->boolean('response10')->nullable();
+          $table->boolean('response2');
+          $table->boolean('response3');
+          $table->boolean('response4');
+          $table->boolean('response5');
           $table->timestamps();
         });
     }

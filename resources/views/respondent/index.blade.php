@@ -15,11 +15,6 @@
             <th scope="col">Question 3</th>
             <th scope="col">Question 4</th>
             <th scope="col">Question 5</th>
-            <th scope="col">Question 6</th>
-            <th scope="col">Question 7</th>
-            <th scope="col">Question 8</th>
-            <th scope="col">Question 9</th>
-            <th scope="col">Question 10</th>
         </tr>
         </thead>
         <tbody>
@@ -31,11 +26,6 @@
                 <td>{{$respondent->response3}}</td>
                 <td>{{$respondent->response4}}</td>
                 <td>{{$respondent->response5}}</td>
-                <td>{{$respondent->response6}}</td>
-                <td>{{$respondent->response7}}</td>
-                <td>{{$respondent->response8}}</td>
-                <td>{{$respondent->response9}}</td>
-                <td>{{$respondent->response10}}</td>
             </tr>
         @endforeach
         </tbody>
