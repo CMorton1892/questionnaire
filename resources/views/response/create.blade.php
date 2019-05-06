@@ -19,43 +19,43 @@
           {{ csrf_field() }}
           <div class="form-group">
               <label for="title"></label>
-              <label class="radio-inline"><input type="radio" name="response1" value="1">Strongly Agree</label>
-              <label class="radio-inline"><input type="radio" name="response1" value="2">Agree</label>
-              <label class="radio-inline"><input type="radio" name="response1" value="3">Neither</label>
-              <label class="radio-inline"><input type="radio" name="response1" value="4">Disagree</label>
-              <label class="radio-inline"><input type="radio" name="response1" value="5">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response1" value="1">   Strongly Agree</label>
+              <label class="radio-inline"><input type="radio" name="response1" value="2">   Agree</label>
+              <label class="radio-inline"><input type="radio" name="response1" value="3">   Neither</label>
+              <label class="radio-inline"><input type="radio" name="response1" value="4">   Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response1" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
               <label for="title">Question 2</label>
-              <label class="radio-inline"><input type="radio" name="response2" value="1">Strongly Agree</label>
-              <label class="radio-inline"><input type="radio" name="response2" value="2">Agree</label>
-              <label class="radio-inline"><input type="radio" name="response2" value="3">Neither</label>
-              <label class="radio-inline"><input type="radio" name="response2" value="4">Disagree</label>
-              <label class="radio-inline"><input type="radio" name="response2" value="5">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response2" value="1">   Strongly Agree</label>
+              <label class="radio-inline"><input type="radio" name="response2" value="2">   Agree</label>
+              <label class="radio-inline"><input type="radio" name="response2" value="3">   Neither</label>
+              <label class="radio-inline"><input type="radio" name="response2" value="4">   Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response2" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
               <label for="title">Question 3</label>
-              <label class="radio-inline"><input type="radio" name="response3" value="1">Strongly Agree</label>
-              <label class="radio-inline"><input type="radio" name="response3" value="2">Agree</label>
-              <label class="radio-inline"><input type="radio" name="response3" value="3">Neither</label>
-              <label class="radio-inline"><input type="radio" name="response3" value="4">Disagree</label>
-              <label class="radio-inline"><input type="radio" name="response3" value="5">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response3" value="1">   Strongly Agree</label>
+              <label class="radio-inline"><input type="radio" name="response3" value="2">   Agree</label>
+              <label class="radio-inline"><input type="radio" name="response3" value="3">   Neither</label>
+              <label class="radio-inline"><input type="radio" name="response3" value="4">   Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response3" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
               <label for="title">Question 4</label>
-              <label class="radio-inline"><input type="radio" name="response4" value="1">Strongly Agree</label>
-              <label class="radio-inline"><input type="radio" name="response4" value="2">Agree</label>
-              <label class="radio-inline"><input type="radio" name="response4" value="3">Neither</label>
-              <label class="radio-inline"><input type="radio" name="response4" value="4">Disagree</label>
-              <label class="radio-inline"><input type="radio" name="response4" value="5">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response4" value="1">   Strongly Agree</label>
+              <label class="radio-inline"><input type="radio" name="response4" value="2">   Agree</label>
+              <label class="radio-inline"><input type="radio" name="response4" value="3">   Neither</label>
+              <label class="radio-inline"><input type="radio" name="response4" value="4">   Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response4" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
               <label for="title">Question 5</label>
-              <label class="radio-inline"><input type="radio" name="response5" value="1">Strongly Agree</label>
-              <label class="radio-inline"><input type="radio" name="response5" value="2">Agree</label>
-              <label class="radio-inline"><input type="radio" name="response5" value="3">Neither</label>
-              <label class="radio-inline"><input type="radio" name="response5" value="4">Disagree</label>
-              <label class="radio-inline"><input type="radio" name="response5" value="5">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response5" value="1">   Strongly Agree</label>
+              <label class="radio-inline"><input type="radio" name="response5" value="2">   Agree</label>
+              <label class="radio-inline"><input type="radio" name="response5" value="3">   Neither</label>
+              <label class="radio-inline"><input type="radio" name="response5" value="4">   Disagree</label>
+              <label class="radio-inline"><input type="radio" name="response5" value="5">   Strongly Disagree</label>
           </div>
           <button type="submit" class="btn btn-primary">Submit Answers</button>
         </form>

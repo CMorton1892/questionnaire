@@ -10,11 +10,12 @@
 <body>
   <div class="container">
   <section>
-    <h1>Questionnaires</h1>
+    <h1>CIS2167 - Server and Client-Side Scripting Coursework 2</h1>
+    <h2>Questionnaires</h2>
     <hr>
     <button><a href="questionnaire/create">Create New Questionnaire</a></button>
     <button><a href="questionnaire">View All Questionnaires</a></button>
-    <button><a href="complete">Admin Area</a></button>
+    <button><a href="">Admin Area</a></button>
     <section>
       @if (isset ($questionnaire))
       <table class="table table-striped table-bordered">
