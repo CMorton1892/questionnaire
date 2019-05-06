@@ -18,14 +18,14 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($respondent as $respondent)
+        @foreach($response as $response)
             <tr>
-                <th scope="row">{{$respondent->id}}</th>
-                <td>{{$respondent->response1}}</td>
-                <td>{{$respondent->response2}}</td>
-                <td>{{$respondent->response3}}</td>
-                <td>{{$respondent->response4}}</td>
-                <td>{{$respondent->response5}}</td>
+                <th scope="row">{{$response->id}}</th>
+                <td>{{$response->response1}}</td>
+                <td>{{$response->response2}}</td>
+                <td>{{$response->response3}}</td>
+                <td>{{$response->response4}}</td>
+                <td>{{$response->response5}}</td>
             </tr>
         @endforeach
         </tbody>

@@ -12,7 +12,7 @@ class QuestionnairesTableSeeder extends Seeder
     public function run()
     {
       DB::table('questionnaires')->insert([
-          ['id' => 12, 'title' => "Edge Hill University"],
+          ['id' => 1, 'title' => "Questionnaire Design"],
       ]);
     }
 }

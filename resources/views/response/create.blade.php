@@ -15,10 +15,10 @@
       <h1>Answer the Following Questions</h1>
       <h4>Please answer each question.</h4>
       <hr>
-      <form action="/respondent" method="post">
+      <form action="/response" method="post">
           {{ csrf_field() }}
           <div class="form-group">
-              <label for="title">Question 1</label>
+              <label for="title"></label>
               <label class="radio-inline"><input type="radio" name="response1" value="1">Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response1" value="2">Agree</label>
               <label class="radio-inline"><input type="radio" name="response1" value="3">Neither</label>

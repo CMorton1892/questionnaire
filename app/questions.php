@@ -15,6 +15,6 @@ class questions extends Model
 
   public function responses()
   {
-    return $this->hasMany('App\respondents');
+    return $this->hasMany('App\responses');
   }
 }

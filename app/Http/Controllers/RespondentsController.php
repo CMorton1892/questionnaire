@@ -16,8 +16,7 @@ class RespondentController extends Controller
     public function index()
     {
       $respondent = respondents::all();
-      $question = questions::all();
-      return view('respondent.index',compact('respondent', $respondent, 'question', $question));
+      return view('respondent.index')->with(['respondent' => $respondent]);
     }
 
     /**

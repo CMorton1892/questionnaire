@@ -14,7 +14,7 @@
 Route::resource('/', 'HomeController');
 
 
-Route::resource('respondents', 'RespondentController');
+Route::resource('response', 'ResponsesController');
 
 //Route::resource('questionnaire', 'QuestionnairesController');
 
@@ -32,9 +32,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('question/create', 'QuestionsController@create');
     Route::post('/question', 'QuestionsController@store');
     Route::get('/question', 'QuestionsController@index');
-    Route::get('/respondent/create', 'RespondentController@create');
-    Route::post('/respondent', 'RespondentController@store');
-    Route::get('/respondent', 'RespondentController@index');
+    Route::get('/response/create', 'ResponsesController@create');
+    Route::post('/response', 'ResponsesController@store');
+    Route::get('/response', 'ResponsesController@index');
+    Route::get('/response', function () {
+      return redirect('/');
+    });
 
 });
 
