@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\respondents;
-use App\questions;
 
 class RespondentController extends Controller
 {

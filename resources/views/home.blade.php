@@ -12,9 +12,9 @@
   <section>
     <h1>Questionnaires</h1>
     <hr>
-    <button><a href="questionnaire/create">New</a></button>
-    <button><a href="respondents/create">New Questionnaire</a></button>
-    <button><a href="/questions">List of Questions</a></button>
+    <button><a href="questionnaire/create">Create New Questionnaire</a></button>
+    <button><a href="questionnaire">View All Questionnaires</a></button>
+    <button><a href="">Admin Area</a></button>
     <section>
       @if (isset ($questionnaire))
       <table class="table table-striped table-bordered">
@@ -26,9 +26,9 @@
           </tr>
         </thead>
         <tbody>
-          @foreach ($questionnaire as $questionnaire)
+          @foreach ($questionnaires as $questionnaire)
           <tr>
-            <td>{{ $questionnaire->id }}</td>
+            <td>{{ $questionnaire->title }}</td>
             <td><a href="">Update</a></td>
             <td><a href="">Delete</a></td>
           </tr>

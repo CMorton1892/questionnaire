@@ -20,7 +20,7 @@
         @foreach($questionnaire as $questionnaire)
             <tr>
                 <th scope="row">{{$questionnaire->id}}</th>
-                <td><a href="/response/create">{{$questionnaire->title}}</a></td>
+                <td><a href="/respondent/create">{{$questionnaire->title}}</a></td>
                 <td><a href="/question/create">Add<a/></td>
                 <td><a href="">Edit</a></td>
                 <td><a href="">Delete</a></td>

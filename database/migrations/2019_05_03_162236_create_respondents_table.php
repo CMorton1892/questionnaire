@@ -15,6 +15,12 @@ class CreateRespondentsTable extends Migration
     {
         Schema::create('respondents', function (Blueprint $table) {
           $table->bigIncrements('id');
+          $table->string('name');
+          $table->string('email');
+          $table->integer('age');
+          $table->string('gender');
+          $table->string('country');
+          $table->boolean('consent');
           $table->timestamps();
         });
     }

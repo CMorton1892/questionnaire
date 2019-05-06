@@ -38,6 +38,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/response', function () {
       return redirect('/');
     });
+    Route::get('/respondent/create', 'RespondentController@create');
+    Route::post('/respondent', 'RespondentController@store');
+    Route::get('/respondent', 'RespondentController@index');
+    Route::get('/respondent', function () {
+      return redirect('/response/create');
+    });
+
 
 });
 
