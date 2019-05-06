@@ -13,6 +13,8 @@
 
 Route::resource('/', 'HomeController');
 
+Route::resource('complete', 'CompleteController');
+
 
 Route::resource('response', 'ResponsesController');
 
@@ -36,7 +38,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/response', 'ResponsesController@store');
     Route::get('/response', 'ResponsesController@index');
     Route::get('/response', function () {
-      return redirect('/');
+      return redirect('/complete');
     });
     Route::get('/respondent/create', 'RespondentController@create');
     Route::post('/respondent', 'RespondentController@store');

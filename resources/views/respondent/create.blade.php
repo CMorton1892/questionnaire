@@ -46,7 +46,7 @@
             </select>
         </div>
         <hr>
-        <h3>Please read the following carefully and if you agree to give consent, please select "Yes" to continue.</h3>
+        <h4>Please read the following carefully and if you agree to give consent, please select "Yes" to continue.</h4>
           <p>Text here.</p>
         <div class="form-group">
           <label for="description">I agree to give consent...</label><br/>

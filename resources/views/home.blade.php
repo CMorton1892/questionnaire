@@ -14,7 +14,7 @@
     <hr>
     <button><a href="questionnaire/create">Create New Questionnaire</a></button>
     <button><a href="questionnaire">View All Questionnaires</a></button>
-    <button><a href="">Admin Area</a></button>
+    <button><a href="complete">Admin Area</a></button>
     <section>
       @if (isset ($questionnaire))
       <table class="table table-striped table-bordered">
