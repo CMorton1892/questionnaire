@@ -38,6 +38,15 @@
               <label for="title">Question 5</label>
               <input type="text" class="form-control" id="productName"  name="question5">
           </div>
+          @if ($errors->any())
+              <div class="alert alert-danger">
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+          @endif
           <button type="submit" class="btn btn-primary">Add Questions</button>
         </form>
     </article>

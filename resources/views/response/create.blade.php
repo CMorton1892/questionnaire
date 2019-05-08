@@ -18,7 +18,7 @@
       <form action="/response" method="post">
           {{ csrf_field() }}
           <div class="form-group">
-              <label for="title"></label>
+              <label for="title">Question 1</label>
               <label class="radio-inline"><input type="radio" name="response1" value="1">   Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response1" value="2">   Agree</label>
               <label class="radio-inline"><input type="radio" name="response1" value="3">   Neither</label>
@@ -57,6 +57,15 @@
               <label class="radio-inline"><input type="radio" name="response5" value="4">   Disagree</label>
               <label class="radio-inline"><input type="radio" name="response5" value="5">   Strongly Disagree</label>
           </div>
+          @if ($errors->any())
+              <div class="alert alert-danger">
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+          @endif
           <button type="submit" class="btn btn-primary">Submit Answers</button>
         </form>
     </article>

@@ -47,7 +47,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/respondent', function () {
       return redirect('/response/create');
     });
-    Route::get('/response', 'AdminAreaController@index');
 
 
 

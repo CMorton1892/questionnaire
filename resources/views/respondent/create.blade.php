@@ -47,7 +47,9 @@
         </div>
         <hr>
         <h4>Please read the following carefully and if you agree to give consent, please select "Yes" to continue.</h4>
-          <p>Text here.</p>
+          <p>The information gathered from your participation will only be used for the right reasons and will not be handed over to any third-parties.
+            Your data will only be visible for research reasons where we collate our findings by age groups and genders. Once the following researcher has
+            been completed and finalised, your data and personal details will be removed from our databases.</p>
         <div class="form-group">
           <label for="description">I agree to give consent...</label><br/>
           <label class="radio-inline"><input type="radio" name="consent" value="1"> Yes</label>

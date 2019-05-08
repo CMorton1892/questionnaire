@@ -37,6 +37,12 @@ class RespondentController extends Controller
     public function store(Request $request)
     {
       $validatedData = $request->validate([
+          'name' => 'required',
+          'email' => 'required',
+          'age' => 'required',
+          'gender' => 'required',
+          'country' => 'required',
+          'consent' => 'required',
       ]);
 
       respondents::create($request->all());

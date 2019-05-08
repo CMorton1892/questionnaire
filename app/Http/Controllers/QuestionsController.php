@@ -40,6 +40,10 @@ class QuestionsController extends Controller
     {
       $validatedData = $request->validate([
           'question1' => 'required',
+          'question2' => 'required',
+          'question3' => 'required',
+          'question4' => 'required',
+          'question5' => 'required',
       ]);
 
       questions::create($request->all());

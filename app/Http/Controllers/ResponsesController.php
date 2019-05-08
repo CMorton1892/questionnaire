@@ -38,6 +38,11 @@ class ResponsesController extends Controller
   public function store(Request $request)
   {
     $validatedData = $request->validate([
+        'response1' => 'required',
+        'response2' => 'required',
+        'response3' => 'required',
+        'response4' => 'required',
+        'response5' => 'required',
     ]);
 
     responses::create($request->all());
