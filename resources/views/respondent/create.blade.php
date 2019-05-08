@@ -14,6 +14,8 @@
   </section>
   <section>
     <hr>
+    <!-- Stores information stored by user -->
+    <!-- Uses variety of data types -->
     <form action="/respondent" method="post">
         {{ csrf_field() }}
         <div class="form-group">
@@ -31,6 +33,7 @@
         <div class="form-group">
             <label for="title">Gender</label>
             <select class="form-control" name="gender">
+              <option>Please Select...</option>
               <option>Male</option>
               <option>Female</option>
               <option>Prefer Not To Say</option>
@@ -39,6 +42,7 @@
         <div class="form-group">
             <label for="title">Country</label>
             <select class="form-control" name="country">
+              <option>Please Select...</option>
               <option>England</option>
               <option>Scotland</option>
               <option>Wales</option>
@@ -50,10 +54,14 @@
           <p>The information gathered from your participation will only be used for the right reasons and will not be handed over to any third-parties.
             Your data will only be visible for research reasons where we collate our findings by age groups and genders. Once the following researcher has
             been completed and finalised, your data and personal details will be removed from our databases.</p>
+        <!-- Could not get "No" option to take user back to a different page e.g. Home -->
+        <!-- Only option for consent is "Yes" or "Back" -->
         <div class="form-group">
           <label for="description">I agree to give consent...</label><br/>
           <label class="radio-inline"><input type="radio" name="consent" value="1"> Yes</label>
         </div>
+        <!-- Checks for any errors -->
+        <!-- Uses validation stored in controller -->
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>

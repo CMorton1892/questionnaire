@@ -16,11 +16,15 @@
         </tr>
         </thead>
         <tbody>
+          <!-- Searches for questions inputted by user -->
         @foreach($question as $question)
             <tr>
+              <!-- Searches for questionnaire title inputted by user -->
               @foreach($questionnaire as $item)
               <th>{{ $item->title }}</th>
               @endforeach
+                <!-- Buttons do not work -->
+                <!-- Unable to get functions to work -->
                 <td><a href="">Edit</a></td>
                 <td><a href="">Delete</a></td>
                 <tr><td>1</td><td>{{$question->question1}}</td></tr>

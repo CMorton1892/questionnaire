@@ -14,6 +14,10 @@ class RespondentController extends Controller
      */
     public function index()
     {
+      /**
+       * Get data from respondents model
+       * Use to view on other pages
+       */
       $respondent = respondents::all();
       return view('respondent.index')->with(['respondent' => $respondent]);
     }

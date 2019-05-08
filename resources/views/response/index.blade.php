@@ -6,6 +6,7 @@
     @if (Session::has('message'))
         <div class="alert alert-info">{{ Session::get('message') }}</div>
     @endif
+    <!-- Responses from user displayed in table -->
     <table class="table">
         <thead class="thead-dark">
         <tr>

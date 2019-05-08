@@ -13,6 +13,9 @@ class CreateQuestionsTable extends Migration
      */
     public function up()
     {
+      /**
+       * Attempt to add foreign key to questions migration
+       */
         Schema::create('questions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('questionnaire_id')->nullable()->unsigned();

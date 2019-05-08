@@ -14,6 +14,10 @@ class ResponsesController extends Controller
    */
   public function index()
   {
+    /**
+     * Get data from responses and questions model
+     * Aim to view on other pages -> questions come up with response/create page
+     */
     $response = responses::all();
     $question = questions::all();
     return view('response.index')->with(['question' => $question, 'response' => $response]);

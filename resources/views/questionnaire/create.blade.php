@@ -16,10 +16,13 @@
     <hr>
     <form action="/questionnaire" method="post">
         {{ csrf_field() }}
+        <!-- Stores title inputted by user -->
         <div class="form-group">
             <label for="title">Questionnaire Title</label>
             <input type="text" class="form-control" id="title"  name="title">
         </div>
+        <!-- Checks for any errors -->
+        <!-- Uses validation stored in controller -->
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>

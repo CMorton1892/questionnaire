@@ -38,12 +38,14 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/response/create', 'ResponsesController@create');
     Route::post('/response', 'ResponsesController@store');
     Route::get('/response', 'ResponsesController@index');
+    // Prevent users from seeing all responses
     Route::get('/response', function () {
       return redirect('/complete');
     });
     Route::get('/respondent/create', 'RespondentController@create');
     Route::post('/respondent', 'RespondentController@store');
     Route::get('/respondent', 'RespondentController@index');
+    // Prevent users from seeing respondents' confidential details
     Route::get('/respondent', function () {
       return redirect('/response/create');
     });

@@ -18,6 +18,8 @@
       <hr>
       <form action="/question" method="post">
           {{ csrf_field() }}
+          <!-- Form created to add questions to questionnaire -->
+          <!-- Inputted text is saved to the database -->
           <div class="form-group">
               <label for="title">Question 1</label>
               <input type="text" class="form-control" id="productName"  name="question1">
@@ -38,6 +40,8 @@
               <label for="title">Question 5</label>
               <input type="text" class="form-control" id="productName"  name="question5">
           </div>
+          <!-- Checks for any errors -->
+          <!-- Uses validation stored in controller -->
           @if ($errors->any())
               <div class="alert alert-danger">
                   <ul>

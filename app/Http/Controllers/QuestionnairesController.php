@@ -14,6 +14,10 @@ class QuestionnairesController extends Controller
      */
     public function index()
     {
+      /**
+       * Get data from questionnaires model
+       * Use to view on other pages -> question
+       */
       $questionnaire = questionnaires::all();
       return view('questionnaire.index',compact('questionnaire',$questionnaire));
     }

@@ -18,6 +18,8 @@
       <form action="/response" method="post">
           {{ csrf_field() }}
           <div class="form-group">
+              <!-- Should pull question from questions model -->
+              <!-- Likert scale used to generate responses -->
               <label for="title">Question 1</label>
               <label class="radio-inline"><input type="radio" name="response1" value="1">   Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response1" value="2">   Agree</label>
@@ -26,6 +28,8 @@
               <label class="radio-inline"><input type="radio" name="response1" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
+              <!-- Should pull question from questions model -->
+              <!-- Likert scale used to generate responses -->
               <label for="title">Question 2</label>
               <label class="radio-inline"><input type="radio" name="response2" value="1">   Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response2" value="2">   Agree</label>
@@ -34,6 +38,8 @@
               <label class="radio-inline"><input type="radio" name="response2" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
+              <!-- Should pull question from questions model -->
+              <!-- Likert scale used to generate responses -->
               <label for="title">Question 3</label>
               <label class="radio-inline"><input type="radio" name="response3" value="1">   Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response3" value="2">   Agree</label>
@@ -42,6 +48,8 @@
               <label class="radio-inline"><input type="radio" name="response3" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
+              <!-- Should pull question from questions model -->
+              <!-- Likert scale used to generate responses -->
               <label for="title">Question 4</label>
               <label class="radio-inline"><input type="radio" name="response4" value="1">   Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response4" value="2">   Agree</label>
@@ -50,6 +58,8 @@
               <label class="radio-inline"><input type="radio" name="response4" value="5">   Strongly Disagree</label>
           </div>
           <div class="form-group">
+              <!-- Should pull question from questions model -->
+              <!-- Likert scale used to generate responses -->
               <label for="title">Question 5</label>
               <label class="radio-inline"><input type="radio" name="response5" value="1">   Strongly Agree</label>
               <label class="radio-inline"><input type="radio" name="response5" value="2">   Agree</label>
@@ -57,6 +67,8 @@
               <label class="radio-inline"><input type="radio" name="response5" value="4">   Disagree</label>
               <label class="radio-inline"><input type="radio" name="response5" value="5">   Strongly Disagree</label>
           </div>
+          <!-- Checks for any errors -->
+          <!-- Uses validation stored in controller -->
           @if ($errors->any())
               <div class="alert alert-danger">
                   <ul>
