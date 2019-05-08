@@ -15,6 +15,7 @@ Route::resource('/', 'HomeController');
 
 Route::resource('complete', 'CompleteController');
 
+Route::resource('admin_area', 'AdminAreaController');
 
 Route::resource('response', 'ResponsesController');
 
@@ -46,6 +47,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/respondent', function () {
       return redirect('/response/create');
     });
+    Route::get('/response', 'AdminAreaController@index');
+
 
 
 });

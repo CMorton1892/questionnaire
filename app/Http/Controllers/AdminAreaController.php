@@ -3,18 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\owners;
 
-class OwnersController extends Controller
+class AdminAreaController extends Controller
 {
-    /*
-     * Secure the set of pages to the admin.
-     */
-     public function __construct()
-     {
-       $this->middleware('auth');
-     }
-     
     /**
      * Display a listing of the resource.
      *
@@ -22,9 +13,7 @@ class OwnersController extends Controller
      */
     public function index()
     {
-      $owners = owners::all();
-
-      return view('admin.owner.show', ['owners' => $owners]);
+      return view('admin_area');
     }
 
     /**
@@ -34,7 +23,7 @@ class OwnersController extends Controller
      */
     public function create()
     {
-        return view('admin.owner.create');
+        //
     }
 
     /**
@@ -45,11 +34,7 @@ class OwnersController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
-
-        owners::create($input);
-
-        return redirect('owners');
+        //
     }
 
     /**
@@ -71,9 +56,7 @@ class OwnersController extends Controller
      */
     public function edit($id)
     {
-        $owners = owners::findOrFail($id);
-
-        return view('admin.owner.edit', compact('owners'));
+        //
     }
 
     /**
